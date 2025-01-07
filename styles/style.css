@@ -15,7 +15,7 @@
   --color-grey-2: #b2becd;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
-  --color-grey-5: #2a2e35;
+  --color-grey-5: #231c2e;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
@@ -161,7 +161,6 @@ section {
   height: 70%;
   width: 58%;
   margin-left: 4rem;
-  background-color: var(--color-black);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -191,4 +190,59 @@ section {
   line-height: 2rem;
 }
 
-/*independent*//*# sourceMappingURL=style.css.map */
+/*independent*/
+.btn-con {
+  display: flex;
+  align-self: flex-start;
+}
+
+.main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.main-btn .btn-text {
+  padding: 0 2rem;
+}
+.main-btn .btn-icon {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.main-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transform: translateX(0);
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}/*# sourceMappingURL=style.css.map */
