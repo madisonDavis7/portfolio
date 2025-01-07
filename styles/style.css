@@ -170,9 +170,6 @@ section {
      object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
-.header-content .left-header .image img:hover {
-  filter: grayscale(100%);
-}
 .header-content .right-header {
   display: flex;
   flex-direction: column;

@@ -184,10 +184,6 @@ section {
                 height: 100%;
                 object-fit: cover;
                 transition: all .4s ease-in-out;
-
-                &:hover {
-                    filter: grayscale(100%); //in grayscale when hovering over 
-                }
             }
         }
     }
