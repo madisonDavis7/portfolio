@@ -311,6 +311,29 @@ section {
                 .prog-text {
                     color: var(--color-grey-2)
                 }
+
+                //change progress pars to intro-mid-high using 1/3 percents
+                //bar is not in right place or right size
+                .progress {
+                    width: 100%;
+                    height: .45rem;
+                    position: reative;
+                    margin-left: 1rem;
+                    background-color: #12181b;
+
+                    .html {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: .45rem;
+                        background-color: red;
+                        transition: all .4s ease-in-out;
+                        width: 60%;
+                    }
+
+
+
+                }
             }
         }
     }
