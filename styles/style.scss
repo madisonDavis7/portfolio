@@ -309,34 +309,38 @@ section {
                 align-items: center;
 
                 .prog-text {
-                    color: var(--color-grey-2)
+                    color: var(--color-grey-2);
                 }
 
-                //change progress pars to intro-mid-high using 1/3 percents
-                //bar is not in right place or right size
                 .progress {
                     width: 100%;
                     height: .45rem;
-                    position: reative;
+                    background-color: var(--color-grey-4);
                     margin-left: 1rem;
-                    background-color: #12181b;
+                    position: relative;
 
-                    .html {
+                    span {
                         position: absolute;
-                        left: 0;
                         top: 0;
-                        height: .45rem;
-                        background-color: red;
+                        left: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
                         transition: all .4s ease-in-out;
-                        width: 60%;
+                        //width: 60%;
                     }
 
+                    .html {
+                        width: 60%; //intermediate
+                    }
 
-
+                    .python {
+                        width: 60%; //intermediate
+                    }
                 }
             }
         }
     }
+
 }
 
 /*independent*/
