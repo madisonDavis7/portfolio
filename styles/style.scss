@@ -330,17 +330,52 @@ section {
                     }
 
                     .html {
+                        //language tag matches each
                         width: 60%; //intermediate
                     }
 
                     .python {
-                        width: 60%; //intermediate
+                        width: 30%; //intermediate
                     }
                 }
             }
         }
     }
+}
 
+.stat-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        left: 50%;
+        top: 0;
+        width: 40%;
+        height: 1px;
+        background-color: var(--color-grey-4);
+        transform: translateX(-50%);
+    }
+}
+
+/* timeline*/
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+
+    .timeline-item {
+        position: relative;
+        padding-left: 3rem;
+        border-left: 1px solid var(--color-grey-5);
+
+        .tl-con {}
+
+    }
 }
 
 /*independent*/
