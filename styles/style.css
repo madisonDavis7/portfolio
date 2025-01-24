@@ -154,7 +154,8 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
+          clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -166,7 +167,8 @@ section {
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
 .header-content .right-header {
@@ -209,7 +211,7 @@ section {
   cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-secondary);
-  box-shadow: 1px 4px 15px rgb(0, 0, 0.32);
+  box-shadow: 1px 4px 15px rgb(0, 0, 0);
 }
 .about-container .right-about .about-item .abt-text {
   padding: 1.5rem;
@@ -294,6 +296,12 @@ section {
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 30%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .java {
+  width: 30%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 15%;
 }
 
 .stat-title {
@@ -384,7 +392,8 @@ section {
 .portfolios .portfolio-item img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-item {
@@ -466,7 +475,8 @@ section {
 .blogs .blog img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -545,6 +555,4 @@ section {
 }
 .main-title h2 span {
   color: var(--color-secondary);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
