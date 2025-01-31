@@ -221,11 +221,13 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem; //spacing between items
+
         .about-item {
             border: 1px solid var(--color-grey-5);
             border-radius: 5px;
             transition: all .4s ease-in-out;
             padding: 1rem;
+            max-height: 200px; //trying to account for scaling
             box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
 
             &:hover {
@@ -298,6 +300,7 @@ section {
         .progress-bar {
             display: flex;
             flex-direction: column;
+            align-items: flex-start; //trying to align bars at same point
 
             .prog-title {
                 text-transform: uppercase;
@@ -307,9 +310,12 @@ section {
             .progress-con {
                 display: flex;
                 align-items: center;
+                width: 100%; //change
 
                 .prog-text {
                     color: var(--color-grey-2);
+                    min-width: 80px; //change
+                    margin-right: 2rem; //change
                 }
 
                 .progress {
@@ -318,6 +324,7 @@ section {
                     background-color: var(--color-grey-4);
                     margin-left: 1rem;
                     position: relative;
+                    display: flex; //change
 
                     span {
                         position: absolute;
@@ -333,21 +340,23 @@ section {
                         //language tag matches each
                         width: 60%; //intermediate
                     }
+
                     .css {
                         width: 60%;
                     }
 
                     .python {
-                        width: 30%; //intermediate
+                        width: 60%; //intermediate
                     }
 
                     .java {
-                        width: 30%;
+                        width: 60%;
                     }
 
                     .js {
                         width: 15%;
                     }
+
                     .linux {
                         width: 15%;
                     }

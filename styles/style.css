@@ -205,6 +205,7 @@ section {
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   padding: 1rem;
+  max-height: 200px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .about-container .right-about .about-item:hover {
@@ -264,6 +265,7 @@ section {
 .about-stats .progress-bars .progress-bar {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
@@ -272,9 +274,12 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: var(--color-grey-2);
+  min-width: 80px;
+  margin-right: 2rem;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
@@ -282,6 +287,7 @@ section {
   background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
+  display: flex;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
@@ -298,10 +304,10 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 30%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 30%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 15%;
