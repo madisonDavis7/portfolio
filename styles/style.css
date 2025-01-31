@@ -194,6 +194,15 @@ section {
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+  grid-gap: 2rem;
+}
+@media (max-width: 1500px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    /* Stack columns on smaller screens */
+    grid-template-rows: auto;
+    /* Allow rows to adjust automatically */
+  }
 }
 .about-container .right-about {
   display: grid;
