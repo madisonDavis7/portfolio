@@ -221,7 +221,6 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem; //spacing between items
-        background-color: red;
         .about-item {
             border: 1px solid var(--color-grey-5);
             border-radius: 5px;
@@ -333,6 +332,9 @@ section {
                     .html {
                         //language tag matches each
                         width: 60%; //intermediate
+                    }
+                    .css {
+                        width: 60%;
                     }
 
                     .python {

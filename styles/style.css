@@ -199,7 +199,6 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  background-color: red;
 }
 .about-container .right-about .about-item {
   border: 1px solid var(--color-grey-5);
@@ -293,6 +292,9 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
