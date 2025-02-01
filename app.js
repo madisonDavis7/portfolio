@@ -42,3 +42,48 @@ function PageTransitions() {
 //call function
 PageTransitions();
 
+//functions for scrolling effect on blog page
+function initBlogScroll() {
+    const blogsWrapper = document.querySelector('.blogs-wrapper');
+    const blogs = document.querySelector('.blogs');
+    const leftBtn = document.querySelector('.left-btn');
+    const rightBtn = document.querySelector('.right-btn');
+
+    let currentIndex = 0;
+    const totalBlogs = document.querySelectorAll('.blog').length;
+
+    function updateSlide(transition = true) {
+        blogs.style.transition = transition ? 'transform 0.3s ease-in-out' : 'none';
+        const slideAmount = -(currentIndex * (100 / totalBlogs));
+        blogs.style.transform = `translateX(${slideAmount}%)`;
+    }
+
+    leftBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalBlogs - 1;
+        }
+        updateSlide();
+    });
+
+    rightBtn.addEventListener('click', () => {
+        if (currentIndex < totalBlogs - 1) {
+            currentIndex++;
+            updateSlide();
+        } else {
+            // When at last slide, reset to first
+            currentIndex = 0;
+            updateSlide();
+        }
+    });
+
+    // Initial setup
+    updateSlide();
+}
+
+// Make sure the DOM is loaded before initializing
+document.addEventListener('DOMContentLoaded', () => {
+    PageTransitions();
+    initBlogScroll();
+});
