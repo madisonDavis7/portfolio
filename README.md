@@ -1,1 +1,16 @@
-This is going to be my portfolio with projects, skills, experience, and some cool insp (blog). 
+My personal portfolio
+
+homepage:
+  -cool logo 
+  -color scheme
+  
+about:
+  -skills
+  -jobs
+  -small bio
+
+portfolio:
+  -projects done
+
+blogs
+  -random cs related stuff I wanted to write about
