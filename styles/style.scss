@@ -632,9 +632,11 @@ section {
 }
 
 /*independent*/
+
 .btn-con {
     display: flex;
     align-self: flex-start;
+    gap: 1rem;
 }
 
 .main-btn {
