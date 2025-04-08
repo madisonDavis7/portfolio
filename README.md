@@ -1,16 +1,5 @@
-My personal portfolio
+#My personal portfolio
 
-homepage:
-  -cool logo 
-  -color scheme
-  
-about:
-  -skills
-  -jobs
-  -small bio
+A little about the projects I've done, jobs I've had and my skills
 
-portfolio:
-  -projects done
-
-blogs
-  -random cs related stuff I wanted to write about
+:)
