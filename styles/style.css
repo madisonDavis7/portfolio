@@ -319,10 +319,16 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 15%;
+  width: 30%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .linux {
-  width: 15%;
+  width: 30%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .typescript {
+  width: 30%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .dart {
+  width: 30%;
 }
 
 .stat-title {
