@@ -387,7 +387,7 @@ section {
     text-transform: uppercase;
     font-size: 1.4rem;
     text-align: center;
-    padding: 3.5rem 0;
+    padding: 3rem 0;
     position: relative;
 
     &::before {
@@ -732,6 +732,7 @@ section {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .box1 {
@@ -759,8 +760,7 @@ section {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 .wf-img {
@@ -801,8 +801,8 @@ section {
 }
 
 .fig-logo {
-    width: 12rem;
-    height: 18rem;
+    width: 9rem;
+    height: 14rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -818,24 +818,56 @@ section {
 .end-box {
     display: flex;
     flex-direction: column;
-
-    height: 120vh;
+    height: 140vh;
     width: 90vw;
     margin-bottom: 7rem;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-bottom: 3rem;
+    gap: 2rem;
 }
 
 .id-row1,
 .id-row2 {
-    width: 100%;
+    width: 90%;
     display: flex;
     height: 50%;
-    border: 2px blue solid;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
 }
 
+.prob-txt {
+    border: blue 2px solid;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.prob-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    background-color: pink;
+}
+
+.learned-txt {
+    border: blue 2px solid;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.learned-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
 
 .back-btn {
     margin-bottom: 3rem;
