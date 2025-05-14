@@ -716,13 +716,15 @@ section {
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-secondary);
-
 }
 
 .about-box {
     display: flex;
     justify-content: center;
-    ;
+    width: 70%;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main-box {
@@ -735,25 +737,25 @@ section {
     margin-bottom: 4rem;
 }
 
-.box1 {
-    border: 2px blue solid;
-    width: 30%;
-    height: 25rem;
-    display: flex;
-}
-
-.box2 {
-    border: 2px blue solid;
-    width: 30%;
-    height: 25rem;
-    display: flex;
-}
-
+.box1,
+.box2,
 .box3 {
-    border: 2px blue solid;
     width: 30%;
     height: 25rem;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+
+.box-par {
+    margin-bottom: 1.5rem;
+}
+
+.elem {
+    margin-bottom: 1rem;
 }
 
 .wf-box {
@@ -871,4 +873,25 @@ section {
 
 .back-btn {
     margin-bottom: 3rem;
+}
+
+.stat-title.lg {
+    font-size: 1.8rem !important;
+}
+
+.galaxy-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.galaxy-txt {
+    font-size: 5rem;
+    font-family: 'Boulder', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(to right, #fd8f37, #cc7db4, #9c6bde, #3947ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
