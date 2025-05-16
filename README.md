@@ -1,5 +1,7 @@
-#My personal portfolio
+My personal portfolio
 
-A little about the projects I've done, jobs I've had and my skills
+-----------------------------------------------
 
-:)
+This is a work in progress portfolio where I have my experience, skills, projects and more. I wanted the style to be simple yet reflective 
+of my personality. I actively add projects as I finish them and am in the progress of adding a new page with more specifics 
+for each project. This is my first portfolio and made from scratch, enjoy:)
