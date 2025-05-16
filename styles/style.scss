@@ -389,6 +389,8 @@ section {
     text-align: center;
     padding: 3rem 0;
     position: relative;
+    margin-top: 5rem;
+    margin-bottom: 2rem; // Add spacing below the title
 
     &::before {
         content: '';
@@ -722,36 +724,70 @@ section {
     display: flex;
     justify-content: center;
     width: 70%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .main-box {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
-    align-items: center;
     justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 100%;
+    }
+
+    .galaxy-box {
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .galaxy-txt {
+        font-size: clamp(2rem, 5vw, 4rem);
+    }
 }
 
 .box1,
 .box2,
 .box3 {
     width: 30%;
-    height: 25rem;
+    height: 30%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    flex: 1 1 calc(33.33% - 2rem);
+    max-width: 100%;
 }
 
 
 
 .box-par {
     margin-bottom: 1.5rem;
+    line-height: 2;
+    font-size: 1.3rem;
 }
 
 .elem {
@@ -760,16 +796,33 @@ section {
 
 .wf-box {
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin-bottom: 4rem;
+    flex-direction: row; // Default layout: side by side
+    gap: 2rem; // Add spacing between `.wf-img` and `.wf-col`
+    width: 100%; // Ensure it takes up the full width of the parent
+    height: auto; // Allow height to adjust dynamically
+}
+
+@media (max-width: 845px) {
+    .wf-box {
+        flex-direction: column; // Stack items vertically
+        align-items: center; // Center-align items
+        gap: 2rem; // Add spacing between items
+        width: 100%; // Ensure it takes full width
+        height: auto; // Allow height to adjust dynamically
+    }
+
+    .wf-col {
+        width: 100%; // Column takes full width
+        height: auto; // Allow height to adjust dynamically
+        margin: 0 auto; // Center-align content
+    }
 }
 
 .wf-img {
-    height: 36rem;
     width: 70%;
     display: flex;
     margin-left: 3rem;
+    height: auto; // Maintain aspect ratio
 }
 
 .galaxy-img {
@@ -779,9 +832,11 @@ section {
 }
 
 .theme-box {
-    border: 2px blue solid;
     width: 100%;
     height: 100%;
+    text-align: center;
+    line-height: 2;
+
 }
 
 .wf-col {
@@ -792,6 +847,8 @@ section {
     height: 32rem;
     margin-top: 2rem;
     margin-right: 3rem;
+    width: 50%; // Default: Column takes half the width
+    height: auto; // Allow height to adjust dynamically
 }
 
 .fig-box {
@@ -841,12 +898,12 @@ section {
 }
 
 .prob-txt {
-    border: blue 2px solid;
     height: 80%;
     width: 50%;
     display: flex;
     text-align: center;
-    margin-top: 2rem;
+    line-height: 2;
+    font-size: 1.3rem;
 }
 
 .prob-img {
@@ -857,12 +914,12 @@ section {
 }
 
 .learned-txt {
-    border: blue 2px solid;
     height: 80%;
     width: 50%;
     display: flex;
     text-align: center;
-    margin-top: 2rem;
+    line-height: 2;
+    font-size: 1.3rem;
 }
 
 .learned-img {
@@ -894,4 +951,65 @@ section {
     background: linear-gradient(to right, #fd8f37, #cc7db4, #9c6bde, #3947ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+b {
+    color: var(--color-pink);
+}
+
+.about-p {
+    line-height: 2;
+}
+
+.end-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.id-row1,
+.id-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.prob-img,
+.learned-img {
+    width: 50%; // Default: Image takes half the row width
+    height: auto; // Maintain aspect ratio
+}
+
+.prob-txt,
+.learned-txt {
+    width: 50%; // Default: Text takes half the row width
+}
+
+@media (max-width: 768px) {
+
+    .id-row1,
+    .id-row2 {
+        flex-direction: column; // Stack image and text vertically
+        align-items: center; // Center-align content
+        gap: 1rem; // Add spacing between image and text
+        height: auto; // Allow height to adjust dynamically
+    }
+
+    .prob-img,
+    .learned-img {
+        width: 100%; // Image takes full width
+        height: auto; // Maintain aspect ratio
+    }
+
+    .prob-txt,
+    .learned-txt {
+        width: 100%; // Text takes full width
+        text-align: center; // Center-align text
+    }
 }
