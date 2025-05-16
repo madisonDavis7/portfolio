@@ -832,8 +832,21 @@ section {
   display: flex;
 }
 
-.back-btn {
-  margin-bottom: 3rem;
+.back-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btn.back-btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8%;
+  font-size: 1.3rem;
 }
 
 .stat-title.lg {
