@@ -703,7 +703,7 @@ section {
   padding: 2rem 0;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: var(--color-pink);
 }
 
 .about-box {
@@ -749,7 +749,8 @@ section {
     text-align: center;
   }
 
-  .galaxy-txt {
+  .galaxy-txt,
+  .cube-txt {
     font-size: clamp(2rem, 5vw, 4rem);
   }
 }
@@ -1029,3 +1030,9 @@ b {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.cube-txt {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 900;
+}
