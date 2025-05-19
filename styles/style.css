@@ -1037,3 +1037,10 @@ b {
   font-weight: 900;
   color: rgba(62, 62, 62, 0.3);
 }
+
+.go-txt {
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 900;
+  color: rgba(92, 92, 92, 0.3);
+  font-family: 'Lucida Console', Monaco, monospace;
+}
