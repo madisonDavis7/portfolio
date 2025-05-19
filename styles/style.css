@@ -1035,4 +1035,5 @@ b {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 900;
+  color: rgba(62, 62, 62, 0.3);
 }
