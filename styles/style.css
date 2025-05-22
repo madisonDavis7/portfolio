@@ -787,23 +787,27 @@ section {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  width: 100%;
-  height: auto;
+  align-items: flex-start;
 }
 
-@media (max-width: 845px) {
+/* Responsive: Stack image and text vertically on small screens */
+@media (max-width: 1000px) {
   .wf-box {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    width: 100%;
-    height: auto;
   }
 
+  .wf-img,
   .wf-col {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .orbit-img {
+    width: 100%;
+    /* Image scales with container */
     height: auto;
-    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
 
@@ -815,7 +819,7 @@ section {
 }
 
 .galaxy-img {
-  height: 36rem;
+  height: auto;
   width: 100%;
   display: flex;
 }
@@ -1030,10 +1034,9 @@ b {
 
 .orbit-img {
   display: flex;
-  width: auto;
-  height: 36rem;
-  aspect-ratio: 1 /1;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+
 }
 
 @media (max-width: 600px) {
