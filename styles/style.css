@@ -958,9 +958,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-b {
-  color: var(--color-pink);
-}
+
 
 .about-p {
   line-height: 2;
@@ -1055,4 +1053,13 @@ b {
     0 0 8px #9c6bde;
   filter: brightness(1.2) contrast(1.1);
   transition: text-shadow 0.3s;
+}
+
+.celestia-ionic-txt {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Audiowide", sans-serif;
+  font-weight: 900;
+  color: rgb(220, 218, 246);
+  text-shadow:
+    0 0 12px #4386fb;
 }
