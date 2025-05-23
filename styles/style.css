@@ -1063,3 +1063,11 @@ section {
   text-shadow:
     0 0 12px #4386fb;
 }
+
+.pk {
+  color: var(--color-pink);
+}
+
+.galaxy-top {
+  margin-top: 3rem;
+}
