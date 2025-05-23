@@ -1071,3 +1071,17 @@ section {
 .galaxy-top {
   margin-top: 3rem;
 }
+
+.go-txt {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Eagle Lake", sans-serif;
+  font-weight: 900;
+  color: rgb(220, 218, 246);
+}
+
+.cube-txt {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 900;
+  color: rgb(220, 218, 246);
+}
