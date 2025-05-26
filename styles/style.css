@@ -47,12 +47,11 @@ header {
 section {
   min-height: 100vh;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+
   padding: 3rem 18rem;
 }
 
+/* 
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
@@ -92,7 +91,7 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
-
+*/
 .controls {
   position: fixed;
   z-index: 10;
