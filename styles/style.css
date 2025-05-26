@@ -47,40 +47,33 @@ header {
 section {
   min-height: 100vh;
   width: 100%;
-  position: absolute;
   left: 0;
   top: 0;
   padding: 3rem 18rem;
 }
 
 .section {
-  display: none;
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
 }
 
 .sec1 {
-  display: none;
   transform: translateY(0) scale(1);
 }
 
 .sec2 {
-  display: none;
   transform: translateY(0) scale(1);
 }
 
 .sec3 {
-  display: none;
   transform: translateY(0) scale(1);
 }
 
 .sec4 {
-  display: none;
   transform: translateY(0) scale(1);
 }
 
 .sec5 {
-  display: none;
   transform: translateY(0) scale(1);
 }
 
@@ -765,14 +758,6 @@ section {
   max-width: 100%;
 }
 
-.box1 {
-  margin-left: 1rem;
-}
-
-.box3 {
-  margin-right: 1rem;
-}
-
 .box-par {
   margin-bottom: 1.5rem;
   line-height: 2;
@@ -787,27 +772,23 @@ section {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  align-items: flex-start;
+  width: 100%;
+  height: auto;
 }
 
-/* Responsive: Stack image and text vertically on small screens */
-@media (max-width: 1000px) {
+@media (max-width: 845px) {
   .wf-box {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
   }
 
-  .wf-img,
   .wf-col {
     width: 100%;
-    max-width: 100%;
-  }
-
-  .orbit-img {
-    width: 100%;
-    /* Image scales with container */
     height: auto;
-    margin-bottom: 1rem;
+    margin: 0 auto;
   }
 }
 
@@ -819,7 +800,7 @@ section {
 }
 
 .galaxy-img {
-  height: auto;
+  height: 36rem;
   width: 100%;
   display: flex;
 }
@@ -958,7 +939,9 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-
+b {
+  color: var(--color-pink);
+}
 
 .about-p {
   line-height: 2;
@@ -1028,60 +1011,13 @@ section {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
-
-.orbit-img {
-  display: flex;
-  width: 100%;
-  height: auto;
-
+html,
+body {
+  height: 100%;
 }
 
-@media (max-width: 600px) {
-  .orbit-img {
-    width: 50vw;
-    max-width: 100%;
-  }
-}
-
-.orbital-txt {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-family: "Orbitron", sans-serif;
-  font-weight: 900;
-  color: rgb(58, 10, 58);
-  text-shadow:
-    0 0 8px #9c6bde;
-  filter: brightness(1.2) contrast(1.1);
-  transition: text-shadow 0.3s;
-}
-
-.celestia-ionic-txt {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-family: "Audiowide", sans-serif;
-  font-weight: 900;
-  color: rgb(220, 218, 246);
-  text-shadow:
-    0 0 12px #4386fb;
-}
-
-.pk {
-  color: var(--color-pink);
-}
-
-.galaxy-top {
-  margin-top: 3rem;
-}
-
-.go-txt {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-family: "Eagle Lake", sans-serif;
-  font-weight: 900;
-  color: rgb(220, 218, 246);
-}
-
-.cube-txt {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-family: "Pixelify Sans", sans-serif;
-  font-weight: 900;
-  color: rgb(220, 218, 246);
+.main-content {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }

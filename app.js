@@ -13,6 +13,13 @@ function PageTransitions() {
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '')
             this.className += ' active-btn';
+
+            // Scroll to the section smoothly
+            const sectionId = this.dataset.id;
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
         })
     }
 
