@@ -42,76 +42,25 @@ a {
 header {
     height: 100vh;
     color: var(--color-white);
-    overflow: hidden;
 }
 
 section {
     min-height: 100vh;
     width: 100%;
-    position: absolute;
     left: 0;
     top: 0;
     padding: 3rem 18rem;
 }
 
-.section {
-    display: none;
-    transform: translateY(-100%) scale(0);
-    transition: all .4s ease-in-out;
-    //background-color: var(--color-primary);
-}
 
-.sec1 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
 
-.sec2 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
 
-.sec3 {
-    display: none;
-    transform: translateY(0) scale(1);
-
-}
-
-.sec4 {
-    display: none; //background color
-    transform: translateY(0) scale(1);
-
-}
-
-.sec5 {
-    display: none;
-    transform: translateY(0) scale(1);
-
-}
-
-.active {
-    display: block;
-    animation: scaleAnim 1s ease-in-out;
-
-    @keyframes scaleAnim {
-        0% {
-            transform: translateY(-100%) scaleY(0);
-        }
-
-        100% {
-            transform: translateY(0) scaleY(1);
-        }
-    }
-}
-
-//sas allows nesting elements 
 //controls
 .controls {
     position: fixed;
     z-index: 10;
     top: 50%;
     right: 3%;
-    //color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -542,7 +491,8 @@ section {
     }
 }
 
-.portfolio-item:hover .hover-item {
+.portfolio-item:hover .hover-item,
+.portfolio-item:focus .hover-item {
     opacity: 1;
     transform: scale(1);
 }
@@ -643,6 +593,9 @@ section {
 }
 
 /*independent*/
+.header .btn-con {
+    margin-top: 2rem;
+}
 
 .btn-con {
     display: flex;
