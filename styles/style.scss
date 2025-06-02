@@ -1112,3 +1112,11 @@ b {
     display: flex;
     justify-content: center;
 }
+
+.learned-img.rounded {
+    border-radius: 45px;
+    height: 75vh;
+    width: auto;
+    margin-right: 5vw;
+    display: flex;
+}
