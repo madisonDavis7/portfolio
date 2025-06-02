@@ -429,7 +429,7 @@ section {
 }
 
 .portfolio-item:hover .hover-item,
-.portfolio-item:focus .hover-item {
+.portfolio-item:focus-within .hover-item {
   opacity: 1;
   transform: scale(1);
 }
