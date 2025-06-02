@@ -93,7 +93,7 @@ sections.forEach(section => observer.observe(section));
 
 // --- Section Navigation and Active Button Highlight ---
 document.addEventListener('DOMContentLoaded', function () {
-    // Smooth scroll on nav button click
+    // --- Smooth scroll and keyboard navigation for controls ---
     const navButtons = document.querySelectorAll('.control');
     navButtons.forEach(btn => {
         btn.addEventListener('click', function () {
@@ -103,9 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         });
+        btn.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
     });
 
-    // Highlight nav button for section in view
+    // --- Intersection Observer for active nav button ---
     const sections = document.querySelectorAll('.section');
     const observer = new IntersectionObserver(
         (entries) => {
