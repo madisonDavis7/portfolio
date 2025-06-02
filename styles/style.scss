@@ -757,13 +757,6 @@ section {
 }
 
 /* wireframe for galaxy specifically */
-.wf-box-galaxy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
 
 .wf-img-galaxy {
     display: flex;
@@ -771,75 +764,52 @@ section {
     width: 100%;
 }
 
-.galaxy-img {
-    height: 15vh;
-    width: auto;
-    display: block;
+.wf-box-galaxy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
 }
 
-.wf-row-gaaxy {
+.wf-img-galaxy {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.theme-box-galaxy {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    width: auto;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.theme-box-galaxy {
-    margin: 0;
-    padding: 0;
-    flex: 0 1 auto;
-    display: flex;
-    align-items: center;
-    border: solid 2px blue;
+    gap: 2rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .box-par-galaxy {
+    flex: 1 1 0;
     margin: 0;
-    padding: 0;
     font-size: 1.2rem;
-    line-height: 1.7;
-    text-align: left;
-    width: 50vw;
-    border: red solid 2px;
+    text-align: center;
+}
+
+
+/* normal stuff */
+.galaxy-img {
+    max-width: 80vw;
+    width: 100%;
+    height: auto;
 }
 
 .fig-box {
-
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 1rem;
 }
-
-.fig-logo {
-    width: 48px;
-    height: auto;
-    display: block;
-    border: solid 2px green;
-}
-
-.wf-col-gaaxy {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.theme-box-galaxy {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1.5rem;
-    width: 100%;
-}
-
-.box-par-galaxy {
-    flex: 2 1 0;
-    margin: 0;
-}
-
 
 .wf-img {
     flex: 1 1 650px;
@@ -921,13 +891,12 @@ section {
     height: 32rem;
     margin-top: 2rem;
     margin-right: 3rem;
-    width: 50%; // Default: Column takes half the width
-    height: auto; // Allow height to adjust dynamically
+    width: 50%;
+    height: auto;
 }
 
 .fig-box {
-    width: 100%;
-    height: auto;
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -935,9 +904,9 @@ section {
 }
 
 .fig-logo {
-    width: 9rem;
+    width: auto;
     height: 14rem;
-    display: flex;
+    display: auto;
     justify-content: center;
     align-items: center;
 
