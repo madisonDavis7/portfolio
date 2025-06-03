@@ -54,12 +54,6 @@ section {
     z-index: 0;
 }
 
-.sec1 {
-    border: solid red 2px;
-}
-
-
-
 //controls
 .controls {
     position: fixed;
@@ -107,7 +101,6 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
-    border: blue solid 2px;
 
     .left-header {
         display: flex;
