@@ -784,6 +784,9 @@ section {
   height: 100%;
   text-align: center;
   line-height: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20%;
 }
 
 .wf-col {
@@ -1030,7 +1033,7 @@ b {
 }
 
 .inspo-box {
-  padding-top: 2rem;
+  padding-top: 3rem;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -1042,4 +1045,33 @@ b {
   height: auto;
   display: flex;
   justify-content: center;
+}
+
+.pulse-txt {
+  font-size: clamp(2rem, 6vw, 8rem);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  animation: pulse 2.2s infinite;
+  padding-top: 2vw;
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.box-par.two {
+  padding-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
