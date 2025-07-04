@@ -1123,5 +1123,24 @@ b {
 /* pulse styling */
 .orbit-img.pulse {
     width: 80%;
-    border: red solid 2px;
+}
+
+.fig-logo.pulse {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.inspo-box {
+    padding-top: 2rem;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inspo-img.pulse {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
