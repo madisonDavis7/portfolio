@@ -670,6 +670,7 @@ section {
   justify-content: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  border: green solid 2px;
 }
 
 /* wireframe for galaxy specifically */
@@ -769,7 +770,7 @@ section {
 .wf-img {
   width: 70%;
   display: flex;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
   height: auto;
 }
 
@@ -787,6 +788,7 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 20%;
+  border: blue solid 2px;
 }
 
 .wf-col {
@@ -1033,15 +1035,15 @@ b {
 }
 
 .inspo-box {
-  padding-top: 3rem;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: red solid 2px;
 }
 
 .inspo-img.pulse {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -1074,4 +1076,11 @@ b {
 }
 .box-par.two {
   padding-top: 2rem;
+}
+
+.learned-img.pulse {
+  width: 40%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
