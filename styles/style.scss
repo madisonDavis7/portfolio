@@ -120,6 +120,15 @@ h5:hover {
 
 }
 
+.control:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 8px #fff,
+        0 0 16px #d682fa,
+        0 0 32px #6f22f5,
+        0 0 48px #d682fa;
+}
+
 /*header-content*/
 .header-content {
     display: grid;
@@ -204,18 +213,21 @@ h5:hover {
         grid-gap: 2rem; //spacing between items
 
         .about-item {
-            border: 1px solid var(--color-grey-5);
+            border: 2px solid var(--color-pink);
             border-radius: 5px;
             transition: all .4s ease-in-out;
             padding: 1rem;
             max-height: 200px; //trying to account for scaling
-            box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
+
 
             &:hover {
                 cursor: default;
                 transform: translateY(-5px);
-                border: 1px solid var(--color-secondary);
-                box-shadow: 1px 4px 15px rgba(0, 0, 0.32);
+                box-shadow:
+                    0 0 8px #fff,
+                    0 0 16px #d682fa,
+                    0 0 32px #6f22f5,
+                    0 0 48px #d682fa;
             }
 
             .abt-text {
@@ -375,7 +387,7 @@ h5:hover {
         &::after {
             content: '';
             position: absolute;
-            top: -18px;
+            top: -10px;
             left: -80px;
             width: 100px;
             height: 20px;
@@ -431,14 +443,17 @@ h5:hover {
 .timeline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 6rem;
     padding-bottom: 3rem;
 
     .timeline-item {
         position: relative;
         padding-left: 2rem; //changing to be more space
-        border-left: 2px solid var(--color-pink);
         padding-right: 25px; //change
+        border-radius: 10px;
+        border: var(--color-pink) 2px solid;
+        transform: translateY(-5px);
+        transition: all .4s ease-in-out;
 
         .tl-icon {
             position: absolute;
@@ -458,14 +473,17 @@ h5:hover {
         }
 
         .tl-duration {
-            padding: .2rem .6rem;
+            padding: .3rem .6rem;
+            margin-top: 1rem;
             background-color: var(--color-grey-4);
             border-radius: 15px;
             display: inline-block;
             font-size: .9rem;
             text-transform: uppercase;
             font-weight: 500;
-            color: white; //or use no color so default is grey
+            color: white;
+            transform: translateY(-5px);
+            transition: all .4s ease-in-out;
         }
 
         h5 {
@@ -485,6 +503,16 @@ h5:hover {
             color: var(--color-grey-3);
         }
     }
+}
+
+.tl-icon:hover,
+.tl-duration:hover,
+.timeline-item:hover {
+    box-shadow:
+        0 0 8px #fff,
+        0 0 16px #d682fa,
+        0 0 32px #6f22f5,
+        0 0 48px #d682fa;
 }
 
 /*portfolio */
@@ -525,6 +553,12 @@ h5:hover {
             opacity: 0;
             transform: scale(0);
             transition: all .4s ease-in-out;
+            transform: translateY(-5px);
+            box-shadow:
+                0 0 8px #fff,
+                0 0 16px #d682fa,
+                0 0 32px #6f22f5,
+                0 0 48px #d682fa;
 
             h3 {
                 font-size: 1.5rem;
@@ -584,6 +618,19 @@ h5:hover {
     overflow: hidden;
     width: 100%;
     position: relative;
+    transition: all .4s ease-in-out;
+    transform: translateY(-5px);
+}
+
+.blogs-wrapper:hover {
+    box-shadow:
+        0 0 8px #fff,
+        0 0 16px #d682fa,
+        0 0 32px #6f22f5,
+        0 0 48px #d682fa;
+
+
+
 }
 
 .blogs {

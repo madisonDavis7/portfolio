@@ -112,6 +112,11 @@ h5:hover {
   pointer-events: none;
 }
 
+.control:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 8px #fff, 0 0 16px #d682fa, 0 0 32px #6f22f5, 0 0 48px #d682fa;
+}
+
 /*header-content*/
 .header-content {
   display: grid;
@@ -189,18 +194,16 @@ h5:hover {
   grid-gap: 2rem;
 }
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
+  border: 2px solid var(--color-pink);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   padding: 1rem;
   max-height: 200px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .about-container .right-about .about-item:hover {
   cursor: default;
   transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  box-shadow: 1px 4px 15px rgb(0, 0, 0);
+  box-shadow: 0 0 8px #fff, 0 0 16px #d682fa, 0 0 32px #6f22f5, 0 0 48px #d682fa;
 }
 .about-container .right-about .about-item .abt-text {
   padding: 1.5rem;
@@ -330,7 +333,7 @@ h5:hover {
 .progress span::after {
   content: "";
   position: absolute;
-  top: -18px;
+  top: -10px;
   left: -80px;
   width: 100px;
   height: 20px;
@@ -374,14 +377,17 @@ h5:hover {
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 6rem;
   padding-bottom: 3rem;
 }
 .timeline .timeline-item {
   position: relative;
   padding-left: 2rem;
-  border-left: 2px solid var(--color-pink);
   padding-right: 25px;
+  border-radius: 10px;
+  border: var(--color-pink) 2px solid;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
@@ -399,7 +405,8 @@ h5:hover {
   font-size: 1.4rem;
 }
 .timeline .timeline-item .tl-duration {
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.6rem;
+  margin-top: 1rem;
   background-color: var(--color-grey-4);
   border-radius: 15px;
   display: inline-block;
@@ -407,6 +414,8 @@ h5:hover {
   text-transform: uppercase;
   font-weight: 500;
   color: white;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
 }
 .timeline .timeline-item h5 {
   padding: 1rem 0;
@@ -421,6 +430,12 @@ h5:hover {
 }
 .timeline .timeline-item p {
   color: var(--color-grey-3);
+}
+
+.tl-icon:hover,
+.tl-duration:hover,
+.timeline-item:hover {
+  box-shadow: 0 0 8px #fff, 0 0 16px #d682fa, 0 0 32px #6f22f5, 0 0 48px #d682fa;
 }
 
 /*portfolio */
@@ -460,6 +475,8 @@ h5:hover {
   opacity: 0;
   transform: scale(0);
   transition: all 0.4s ease-in-out;
+  transform: translateY(-5px);
+  box-shadow: 0 0 8px #fff, 0 0 16px #d682fa, 0 0 32px #6f22f5, 0 0 48px #d682fa;
 }
 .portfolios .portfolio-item .hover-item h3 {
   font-size: 1.5rem;
@@ -512,6 +529,12 @@ h5:hover {
   overflow: hidden;
   width: 100%;
   position: relative;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-5px);
+}
+
+.blogs-wrapper:hover {
+  box-shadow: 0 0 8px #fff, 0 0 16px #d682fa, 0 0 32px #6f22f5, 0 0 48px #d682fa;
 }
 
 .blogs {
