@@ -891,6 +891,7 @@ section {
     margin-right: 3rem;
     width: 50%;
     height: auto;
+    border: pink solid 2px;
 }
 
 .fig-box {
@@ -1139,7 +1140,6 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: red solid 2px;
 }
 
 .inspo-img.pulse {
@@ -1186,4 +1186,32 @@ b {
     height: auto;
     display: flex;
     margin: 0 auto;
+}
+
+.large-screen-video {
+    display: none;
+    width: 100%;
+    position: relative;
+    min-height: 60vh;
+}
+
+.video-break {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    position: relative;
+}
+
+/* responsiveness for pulse page*/
+@media (min-width: 1025px) {
+    .large-screen-video {
+        display: block;
+        border: solid white 2px;
+        width: 100%;
+    }
+
+    .inspo-box {
+        width: 90%;
+        padding-top: 2rem;
+    }
 }
