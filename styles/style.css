@@ -53,6 +53,19 @@ section {
   z-index: 0;
 }
 
+/* scrolling nonsense */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2.2s ease, transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: visible;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .controls {
   position: fixed;
   z-index: 10;

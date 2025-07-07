@@ -169,3 +169,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initBlogScroll();
 });
+
+//scrolling nonsense
+window.addEventListener('scroll', checkFade);
+window.addEventListener('DOMContentLoaded', checkFade);
+
+function checkFade() {
+    const elements = document.querySelectorAll('.scroll-fade');
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50 && rect.bottom > 0) {
+            el.classList.add('visible');
+        } else {
+            el.classList.remove('visible');
+        }
+    });
+}
