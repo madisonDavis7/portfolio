@@ -67,6 +67,17 @@ section {
     transform: translateY(0);
 }
 
+// hover animations
+h5:hover {
+    transform: scale(1.05);
+    transition: all .4s ease-in-out;
+}
+
+.tl-icon:hover {
+    transform: scale(1.2);
+    transition: all .4s ease-in-out;
+}
+
 //controls
 .controls {
     position: fixed;

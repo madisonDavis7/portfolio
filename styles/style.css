@@ -66,6 +66,16 @@ section {
   transform: translateY(0);
 }
 
+h5:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.tl-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+
 .controls {
   position: fixed;
   z-index: 10;
