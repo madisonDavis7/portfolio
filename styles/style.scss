@@ -1203,10 +1203,9 @@ b {
 }
 
 /* responsiveness for pulse page*/
-@media (min-width: 1025px) {
+@media (min-width: 1600px) {
     .large-screen-video {
         display: block;
-        border: solid white 2px;
         width: 100%;
     }
 
