@@ -1201,10 +1201,71 @@ b {
     }
 }
 
+/* rubiks cube stuff */
+.cube-txt {
+    font-family: "Silkscreen", sans-serif;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 700;
+    color: black;
+    position: relative;
+    background: linear-gradient(90deg, #fff, yellow, green, blue, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px transparent
+}
+
+.cube-txt.gradient {
+    color: transparent;
+    background: linear-gradient(90deg, #fff, yellow, green, blue, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #000000;
+    filter: drop-shadow(0 0 2px #000000);
+}
+
+/* go stuff */
+.go-txt {
+    font-family: "Eagle Lake", sans-serif;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 700;
+    color: black;
+    -webkit-text-stroke: 1px rgb(171, 141, 141);
+}
+
+/*orbital stuff */
+.orbital-txt {
+    font-family: "AudioWide", sans-serif;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 400;
+    color: black;
+    background: linear-gradient(90deg, #fd8f37, #cc7db4, #9c6bde, #3947ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #3b3743;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #d682fa,
+        0 0 32px #6f22f5,
+        0 0 48px #d682fa;
+}
+
+/* celestia with ionic stuff */
+.celestia-ionic-txt {
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 5rem);
+    background: linear-gradient(to right, #3d014b, #3d0274, #22038a, #4a19bc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.4);
+    line-height: 1.5;
+
+}
+
 /* greengrid stuff */
 .greengrid-txt {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 200;
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    font-weight: 300;
     font-family: "Urbanist", sans-serif;
     color: #828c45;
     text-align: center;
