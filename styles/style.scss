@@ -389,10 +389,10 @@ h5:hover {
             position: absolute;
             top: -10px;
             left: -80px;
-            width: 100px;
+            width: 40px;
             height: 20px;
             background: radial-gradient(circle, #fff 0%, #d682fa 40%, #6f22f5 70%, transparent 100%);
-            opacity: 0.55;
+            opacity: 0.65;
             filter: blur(10px);
             animation: neon-glow-move 6s linear infinite;
             z-index: 0;
@@ -612,10 +612,12 @@ h5:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 40px;
+    border-radius: 20px;
 }
 
 .blogs-wrapper {
     overflow: hidden;
+    border-radius: 20px;
     width: 100%;
     position: relative;
     transition: all .4s ease-in-out;
@@ -628,9 +630,6 @@ h5:hover {
         0 0 16px #d682fa,
         0 0 32px #6f22f5,
         0 0 48px #d682fa;
-
-
-
 }
 
 .blogs {
@@ -644,7 +643,7 @@ h5:hover {
         flex: 0 0 calc(100% / 3);
         position: relative;
         background-color: var(--color-grey-4);
-        border-radius: 5px;
+        border-radius: 15px;
         box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
         transition: all .4s ease-in-out;
         padding: 20px;
@@ -853,6 +852,8 @@ h5:hover {
     text-align: center;
     flex: 1 1 calc(33.33% - 2rem);
     max-width: 100%;
+    justify-content: center; // Vertically centers content
+    align-items: center; // Horizontally centers content
 }
 
 
@@ -860,7 +861,8 @@ h5:hover {
 .box-par {
     margin-bottom: 1.5rem;
     line-height: 2;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+
 }
 
 .elem {
@@ -906,7 +908,7 @@ h5:hover {
 .box-par-galaxy {
     flex: 1 1 0;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
     text-align: center;
 }
 
@@ -1066,7 +1068,7 @@ h5:hover {
     display: flex;
     text-align: center;
     line-height: 2;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .prob-img {
@@ -1081,7 +1083,7 @@ h5:hover {
     display: flex;
     text-align: center;
     line-height: 2;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .learned-img {
@@ -1134,6 +1136,7 @@ b {
 
 .about-p {
     line-height: 2;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .end-box {
@@ -1394,3 +1397,32 @@ b {
         padding-top: 2rem;
     }
 }
+
+/* responsiveness for smaller screens - phones */
+@media (max-width: 768px) {
+    .controls {
+        display: none;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        border: red solid 2px;
+    }
+
+
+    .left-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-header {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .portfolio-item img {
+        height: 200px; // Adjusts portfolio item image height for smaller screens
+    }
+}
+
