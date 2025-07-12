@@ -1288,10 +1288,6 @@ b {
     display: none;
   }
   .header-content {
-<<<<<<< HEAD
-    grid-template-columns: 1fr;
-    border: red solid 2px;
-=======
     display: flex !important;
     flex-direction: column !important;
     align-items: center;
@@ -1302,7 +1298,6 @@ b {
     border: red solid 2px;
     grid-template-columns: none !important;
     grid-template-rows: none !important;
->>>>>>> cb4a33b3d1b9a36b0bf4d973018935a70472688a
   }
   .left-header {
     flex-direction: column;
@@ -1312,8 +1307,5 @@ b {
   .right-header {
     padding-right: 0;
     text-align: center;
-  }
-  .portfolio-item img {
-    height: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1439,9 +1439,7 @@ b {
     }
 
     .header-content {
-        <<<<<<< HEAD grid-template-columns: 1fr;
-        border: red solid 2px;
-        =======display: flex !important;
+        display: flex !important;
         flex-direction: column !important;
         align-items: center;
         justify-content: center;
@@ -1451,7 +1449,6 @@ b {
         border: red solid 2px; // for debugging, remove if not needed
         grid-template-columns: none !important;
         grid-template-rows: none !important;
-        >>>>>>>cb4a33b3d1b9a36b0bf4d973018935a70472688a
     }
 
 
@@ -1465,14 +1462,4 @@ b {
         padding-right: 0;
         text-align: center;
     }
-
-    .portfolio-item img {
-        <<<<<<< HEAD height: 200px; // Adjusts portfolio item image height for smaller screens
-    }
 }
-
-=======height: 200px;
-}
-}
-
->>>>>>>cb4a33b3d1b9a36b0bf4d973018935a70472688a
