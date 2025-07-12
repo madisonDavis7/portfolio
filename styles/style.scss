@@ -434,8 +434,40 @@ h5:hover {
         top: 0;
         width: 60%;
         height: 2px;
-        background-color: var(--color-grey-4);
+        background-color: var(--color-secondary);
+
+        box-shadow: 0 0 8px #fff,
+            0 0 16px #d682fa,
+            0 0 32px #6f22f5,
+            0 0 48px #d682fa;
         transform: translateX(-50%);
+    }
+}
+
+.stat-title.lg {
+    position: relative;
+    font-size: clamp(1.8rem, 2vw, 2.2rem) !important;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 60%;
+        height: 0.45rem; // Match .progress height
+        background: var(--color-secondary); // Match progress bar color
+        border-radius: 0.225rem; // Half the height for pill shape
+        box-shadow:
+            0 0 8px #fff,
+            0 0 16px #d682fa,
+            0 0 32px #6f22f5,
+            0 0 48px #d682fa;
+        transform: translateX(-50%);
+        z-index: 0;
     }
 }
 
@@ -1110,7 +1142,30 @@ h5:hover {
 }
 
 .stat-title.lg {
+    position: relative;
     font-size: clamp(1.8rem, 2vw, 2.2rem) !important;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 60%;
+        height: 0.45rem; // Match .progress height
+        background: var(--color-secondary); // Match progress bar color
+        border-radius: 0.225rem; // Half the height for pill shape
+        box-shadow:
+            0 0 8px #fff,
+            0 0 16px #d682fa,
+            0 0 32px #6f22f5,
+            0 0 48px #d682fa;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
 }
 
 .galaxy-box {
