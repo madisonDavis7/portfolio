@@ -389,10 +389,10 @@ h5:hover {
             position: absolute;
             top: -10px;
             left: -80px;
-            width: 40px;
+            width: 100px;
             height: 20px;
             background: radial-gradient(circle, #fff 0%, #d682fa 40%, #6f22f5 70%, transparent 100%);
-            opacity: 0.65;
+            opacity: 0.55;
             filter: blur(10px);
             animation: neon-glow-move 6s linear infinite;
             z-index: 0;
@@ -852,8 +852,6 @@ h5:hover {
     text-align: center;
     flex: 1 1 calc(33.33% - 2rem);
     max-width: 100%;
-    justify-content: center; // Vertically centers content
-    align-items: center; // Horizontally centers content
 }
 
 
@@ -1439,9 +1437,7 @@ b {
     }
 
     .header-content {
-        <<<<<<< HEAD grid-template-columns: 1fr;
-        border: red solid 2px;
-        =======display: flex !important;
+        display: flex !important;
         flex-direction: column !important;
         align-items: center;
         justify-content: center;
@@ -1451,7 +1447,6 @@ b {
         border: red solid 2px; // for debugging, remove if not needed
         grid-template-columns: none !important;
         grid-template-rows: none !important;
-        >>>>>>>cb4a33b3d1b9a36b0bf4d973018935a70472688a
     }
 
 
@@ -1467,12 +1462,6 @@ b {
     }
 
     .portfolio-item img {
-        <<<<<<< HEAD height: 200px; // Adjusts portfolio item image height for smaller screens
+        height: 200px;
     }
 }
-
-=======height: 200px;
-}
-}
-
->>>>>>>cb4a33b3d1b9a36b0bf4d973018935a70472688a
