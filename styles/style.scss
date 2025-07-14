@@ -158,7 +158,6 @@ h5:hover {
             height: 70%;
             width: 58%;
             margin-left: 4rem;
-            //background-color: var(--color-black);
             transition: all .4s ease-in-out;
 
             img {
@@ -202,15 +201,14 @@ h5:hover {
     //trying to fix scaling for smaller screens
     @media (max-width: 1500px) {
         grid-template-columns: 1fr;
-        /* Stack columns on smaller screens */
         grid-template-rows: auto;
-        /* Allow rows to adjust automatically */
+
     }
 
     .right-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem; //spacing between items
+        grid-gap: 2rem;
 
         .about-item {
             border: 2px solid var(--color-pink);
@@ -303,12 +301,12 @@ h5:hover {
             .progress-con {
                 display: flex;
                 align-items: center;
-                width: 100%; //change
+                width: 100%;
 
                 .prog-text {
                     color: var(--color-grey-2);
-                    min-width: 80px; //change
-                    margin-right: 2rem; //change
+                    min-width: 80px;
+                    margin-right: 2rem;
                 }
 
                 .progress {
@@ -317,7 +315,7 @@ h5:hover {
                     background-color: var(--color-grey-4);
                     margin-left: 1rem;
                     position: relative;
-                    display: flex; //change
+                    display: flex;
 
                     span {
                         position: absolute;
@@ -420,12 +418,12 @@ h5:hover {
 
 .stat-title {
     text-transform: uppercase;
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem); // Scale stat-title dynamically
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     text-align: center;
     padding: 3rem 0;
     position: relative;
     margin-top: 5rem;
-    margin-bottom: 2rem; // Add spacing below the title
+    margin-bottom: 2rem;
 
     &::before {
         content: '';
@@ -450,7 +448,6 @@ h5:hover {
     text-align: center;
     padding: 3rem 0;
     margin-top: 5rem;
-    margin-bottom: 2rem;
 
     &::before {
         content: '';
@@ -460,7 +457,7 @@ h5:hover {
         width: 60%;
         height: 0.45rem; // Match .progress height
         background: var(--color-secondary); // Match progress bar color
-        border-radius: 0.225rem; // Half the height for pill shape
+        border-radius: 0.225rem;
         box-shadow:
             0 0 8px #fff,
             0 0 16px #d682fa,
@@ -480,8 +477,8 @@ h5:hover {
 
     .timeline-item {
         position: relative;
-        padding-left: 2rem; //changing to be more space
-        padding-right: 25px; //change
+        padding-left: 2rem;
+        padding-right: 25px;
         border-radius: 10px;
         border: var(--color-pink) 2px solid;
         transform: translateY(-5px);
@@ -566,7 +563,7 @@ h5:hover {
         img {
             width: 100%;
             height: 300px;
-            object-fit: cover; //covers grid item
+            object-fit: cover;
             border-radius: 15px;
         }
 
@@ -606,7 +603,7 @@ h5:hover {
                 .icon {
                     background-color: var(--color-primary);
                     border-radius: 50%;
-                    width: 50px; //must be same as height
+                    width: 50px;
                     height: 50px;
                     display: flex;
                     align-items: center;
@@ -667,11 +664,11 @@ h5:hover {
 .blogs {
     display: flex;
     transition: transform 0.3s ease-in-out;
-    width: 300%; // Set to accommodate all three blogs
+    width: 300%;
     position: relative;
 
     .blog {
-        width: calc(100% / 3); // Each blog takes exactly one-third
+        width: calc(100% / 3);
         flex: 0 0 calc(100% / 3);
         position: relative;
         background-color: var(--color-grey-4);
@@ -679,10 +676,10 @@ h5:hover {
         box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
         transition: all .4s ease-in-out;
         padding: 20px;
-        margin: 0; // Remove any margin
-        display: flex; // Add this
-        flex-direction: column; // Add this
-        align-items: center; // Add this
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         img {
             width: 100%; // Change from calc(100% - 40px)
@@ -694,8 +691,8 @@ h5:hover {
         }
 
         .blog-text {
-            width: 100%; // Add this
-            margin-top: 20px; // Adjust spacing
+            width: 100%;
+            margin-top: 20px;
             padding: 1.1rem;
             border-top: 8px solid var(--color-secondary);
 
@@ -710,7 +707,7 @@ h5:hover {
             p {
                 line-height: 2rem;
                 padding-bottom: 1rem;
-                text-align: left; // Add this
+                text-align: left;
             }
         }
     }
@@ -790,13 +787,13 @@ h5:hover {
 
     &:hover {
 
-        //transition: all .4s ease-in-out;
+
         &::before {
             width: 100%;
             height: 100%;
             background-color: var(--color-secondary);
             transform: translateX(0);
-            //transition: all .4s ease-in-out;
+
         }
     }
 }
@@ -906,6 +903,7 @@ h5:hover {
     text-align: center;
     margin-bottom: 2rem;
     flex-wrap: wrap;
+    border: red solid 2px;
 }
 
 /* wireframe for galaxy specifically */
@@ -960,10 +958,10 @@ h5:hover {
 .wf-img {
     flex: 1 1 650px;
     max-width: 1200px;
-    min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: blue solid 2px;
 }
 
 .orbit-img {

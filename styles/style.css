@@ -183,9 +183,7 @@ h5:hover {
 @media (max-width: 1500px) {
   .about-container {
     grid-template-columns: 1fr;
-    /* Stack columns on smaller screens */
     grid-template-rows: auto;
-    /* Allow rows to adjust automatically */
   }
 }
 .about-container .right-about {
@@ -380,7 +378,6 @@ h5:hover {
   text-align: center;
   padding: 3rem 0;
   margin-top: 5rem;
-  margin-bottom: 2rem;
 }
 .stat-title.lg::before {
   content: "";
@@ -782,6 +779,7 @@ h5:hover {
   text-align: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  border: red solid 2px;
 }
 
 /* wireframe for galaxy specifically */
@@ -834,10 +832,10 @@ h5:hover {
 .wf-img {
   flex: 1 1 650px;
   max-width: 1200px;
-  min-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: blue solid 2px;
 }
 
 .orbit-img {
