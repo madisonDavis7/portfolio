@@ -1318,6 +1318,14 @@ b {
   height: 100%;
 }
 
+.theme-box.pulse {
+  padding-right: 2rem;
+}
+
+.wf-box.pulse {
+  gap: 1rem;
+}
+
 /* responsiveness for pulse page*/
 @media (min-width: 1600px) {
   .large-screen-video {
