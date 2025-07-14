@@ -903,7 +903,6 @@ h5:hover {
     text-align: center;
     margin-bottom: 2rem;
     flex-wrap: wrap;
-    border: red solid 2px;
 }
 
 /* wireframe for galaxy specifically */
@@ -961,7 +960,6 @@ h5:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: blue solid 2px;
 }
 
 .orbit-img {
@@ -1367,7 +1365,10 @@ b {
     align-items: center;
     overflow: hidden;
     border-radius: 45px;
+}
 
+.box3.greengrid {
+    justify-content: center;
 }
 
 .greengrid-img-top {
