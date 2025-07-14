@@ -809,7 +809,7 @@ h5:hover {
 .box-par-galaxy {
   flex: 1 1 0;
   margin: 0;
-  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   text-align: center;
 }
 
