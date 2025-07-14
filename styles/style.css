@@ -1122,7 +1122,6 @@ b {
     min-height: 100vh;
     width: 100vw;
     max-width: 100vw;
-    border: red solid 2px;
     grid-template-columns: none !important;
     grid-template-rows: none !important;
   }
@@ -1311,6 +1310,14 @@ b {
   position: relative;
 }
 
+.galaxy-box.pulse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 /* responsiveness for pulse page*/
 @media (min-width: 1600px) {
   .large-screen-video {
@@ -1335,7 +1342,6 @@ b {
     min-height: 100vh;
     width: 100vw;
     max-width: 100vw;
-    border: red solid 2px;
     grid-template-columns: none !important;
     grid-template-rows: none !important;
   }

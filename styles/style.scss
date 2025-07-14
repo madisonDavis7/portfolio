@@ -884,10 +884,8 @@ h5:hover {
     text-align: center;
     flex: 1 1 calc(33.33% - 2rem);
     max-width: 100%;
-    align-items: center; // Horizontally centers content
+    align-items: center;
 }
-
-
 
 .box-par {
     margin-bottom: 1.5rem;
@@ -1268,9 +1266,8 @@ b {
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        width: 100vw; // Make it take full viewport width
+        width: 100vw;
         max-width: 100vw;
-        border: red solid 2px; // for debugging, remove if not needed
         grid-template-columns: none !important;
         grid-template-rows: none !important;
     }
@@ -1473,6 +1470,14 @@ b {
     position: relative;
 }
 
+.galaxy-box.pulse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 /* responsiveness for pulse page*/
 @media (min-width: 1600px) {
     .large-screen-video {
@@ -1500,7 +1505,6 @@ b {
         min-height: 100vh;
         width: 100vw; // Make it take full viewport width
         max-width: 100vw;
-        border: red solid 2px; // for debugging, remove if not needed
         grid-template-columns: none !important;
         grid-template-rows: none !important;
     }
