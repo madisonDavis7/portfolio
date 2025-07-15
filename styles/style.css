@@ -821,11 +821,7 @@ h5:hover {
 }
 
 .fig-box {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1rem;
+  display: none;
 }
 
 .wf-img {
@@ -907,13 +903,6 @@ h5:hover {
   height: 32rem;
   width: 50%;
   height: auto;
-}
-
-.fig-box {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fig-logo {
