@@ -1575,3 +1575,71 @@ b {
 .learned-img.flutter {
     padding-right: 2rem;
 }
+
+/* docker demo page stuff */
+
+.base-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.demo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 50vh;
+    text-align: center;
+    border: 2px solid var(--color-pink);
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.demo-box:hover {
+    box-shadow:
+        0 0 8px #fff,
+        0 0 16px #d682fa,
+        0 0 32px #6f22f5,
+        0 0 48px #d682fa;
+    transform: scale(1.08);
+    transition: all .4s ease-in-out;
+}
+
+.demo-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.num {
+    font-size: clamp(1rem, 3vw, 5rem);
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-in-out;
+}
+
+.num:hover {
+    transform: scale(1.1);
+    background-color: var(--color-pink);
+
+}
+
+.num-txt {
+    padding-left: 2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
