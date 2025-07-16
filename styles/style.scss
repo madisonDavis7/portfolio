@@ -1585,19 +1585,19 @@ b {
     justify-content: center;
     width: 100%;
     padding-bottom: 2rem;
+    margin: 0 auto;
 }
 
 .demo-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 60vw;
-    height: 50vh;
-    text-align: center;
+    height: 60vh;
+    text-align: left;
     border: 2px solid var(--color-pink);
     border-radius: 10px;
     transition: all .4s ease-in-out;
+    align-items: flex-start;
 }
 
 .demo-box:hover {
@@ -1613,10 +1613,12 @@ b {
 .demo-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
     width: 100%;
     height: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .num {
