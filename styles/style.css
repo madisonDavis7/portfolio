@@ -1472,4 +1472,9 @@ b {
 .num-txt {
   padding-left: 2rem;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.docker-link {
+  color: var(--color-pink);
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

@@ -661,6 +661,7 @@ h5:hover {
     align-items: center;
     justify-content: center;
     line-height: 0;
+
 }
 
 .icon i {
@@ -676,6 +677,7 @@ h5:hover {
 .icon:hover {
     transform: scale(1.2);
     background-color: var(--color-pink);
+
 }
 
 .icon-txt {
@@ -1645,4 +1647,9 @@ b {
 .num-txt {
     padding-left: 2rem;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.docker-link {
+    color: var(--color-pink);
+    text-decoration: underline;
 }
