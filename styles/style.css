@@ -1477,4 +1477,23 @@ b {
 .docker-link {
   color: var(--color-pink);
   text-decoration: underline;
+}
+
+/* footer content */
+.footer-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  color: white;
+  background-color: var(--color-primary);
+  padding-bottom: 2rem;
+}
+
+.personal-logo {
+  width: 6vw;
+  height: auto;
+  padding-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
