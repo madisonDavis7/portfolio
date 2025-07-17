@@ -1433,6 +1433,14 @@ b {
   align-items: flex-start;
 }
 
+.demo-row.galaxy {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .demo-box:hover {
   box-shadow: 0 0 8px #fff, 0 0 16px #d682fa, 0 0 32px #6f22f5, 0 0 48px #d682fa;
   transform: scale(1.08);

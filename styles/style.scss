@@ -1603,6 +1603,14 @@ b {
     align-items: flex-start;
 }
 
+.demo-row.galaxy {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .demo-box:hover {
     box-shadow:
         0 0 8px #fff,
@@ -1648,6 +1656,7 @@ b {
     padding-left: 2rem;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
+
 
 .docker-link {
     color: var(--color-pink);
