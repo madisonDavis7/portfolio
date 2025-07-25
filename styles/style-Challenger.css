@@ -138,8 +138,7 @@ h5:hover {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
-          clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
+  clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);

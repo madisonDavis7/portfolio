@@ -54,6 +54,14 @@ section {
     z-index: 0;
 }
 
+h1,
+h2,
+h4,
+h5 {
+    font-family: "Sansation", sans-serif;
+    font-weight: 400;
+}
+
 /* scrolling nonsense */
 .scroll-fade {
     opacity: 0;

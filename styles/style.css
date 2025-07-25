@@ -53,6 +53,14 @@ section {
   z-index: 0;
 }
 
+h1,
+h2,
+h4,
+h5 {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+}
+
 /* scrolling nonsense */
 .scroll-fade {
   opacity: 0;
@@ -138,8 +146,7 @@ h5:hover {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
-          clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
+  clip-path: polygon(0 0, 56% 0, 89% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
