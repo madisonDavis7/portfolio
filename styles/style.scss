@@ -512,7 +512,7 @@ h5:hover {
 
         .tl-duration {
             padding: .3rem .6rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             background-color: var(--color-grey-4);
             border-radius: 15px;
             display: inline-block;
@@ -551,6 +551,16 @@ h5:hover {
         0 0 16px #d682fa,
         0 0 32px #6f22f5,
         0 0 48px #d682fa;
+}
+
+.tech-cont {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+li {
+    list-style-position: inside;
+    list-style-type: circle;
 }
 
 /*portfolio */
