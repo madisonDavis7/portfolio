@@ -476,6 +476,19 @@ h5:hover {
     }
 }
 
+.web-cont {
+    border: var(--color-pink) 2px solid;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all .4s ease-in-out;
+    text-align: center;
+    margin: 3rem auto 0 auto;
+
+}
+
 /* timeline*/
 .timeline {
     display: grid;
@@ -545,7 +558,8 @@ h5:hover {
 
 .tl-icon:hover,
 .tl-duration:hover,
-.timeline-item:hover {
+.timeline-item:hover,
+.web-cont:hover {
     box-shadow:
         0 0 8px #fff,
         0 0 16px #d682fa,
