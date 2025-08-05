@@ -294,10 +294,10 @@ h5:hover {
   transition: all 0.4s ease-in-out;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 60%;
+  width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 60%;
+  width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 60%;
@@ -314,8 +314,8 @@ h5:hover {
 .about-stats .progress-bars .progress-bar .progress-con .progress .typescript {
   width: 30%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .dart {
-  width: 30%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .accessibility {
+  width: 60%;
 }
 
 .progress {
